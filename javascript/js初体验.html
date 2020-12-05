@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2.内嵌式的js -->
+    <script>
+        alert('沙漠骆驼');
+    </script>
+    <!-- 3.外部js引入 -->
+    <script src="a.html"></script>
+    <script>
+        //输入框
+        prompt('请输入你的账号：');
+        //alert 弹出警示框
+        alert('你的账户余额是');
+        //console 控制台输出，程序员测试
+        console.log('程序员可以看到的内容');
+    </script>
+    <script>
+        var myname = '旗木卡卡西';
+        var address = '火影村';
+        var age = 30;
+        var email = 'kakaxi@itcast.cn';
+        var gz = 2000;
+        console.log(myname);
+        console.log(address);
+        console.log(age);
+        console.log(email);
+        console.log(gz);
+    </script>
+    <script>
+        var mynames = prompt('请输入你的姓名');
+        alert(mynames);
+        //声明多个变量
+        var age1 = 18,address = '火影村',gz = 2000;
+    </script>
+    <script>
+        var temp;
+        var apple1 = '青苹果';
+        var apple2 = '红苹果';
+        temp = apple1;
+        apple1 = appl2;
+        apple2 = temp;
+        console.log(apple1);
+        console.log(apple2);
+    </script>
+</head>
+<body>
+    <!-- 1.行内式的js,直接写到元素的内部 -->
+    <input type="button" value="你好！" onclick="alert('欢迎来到JavaScript！！！')">
+</body>
+</html>

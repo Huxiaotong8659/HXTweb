@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="iconfont.css"> -->
+    <style>
+        @font-face {font-family: "iconfont";
+            src: url('iconfont.eot?t=1606640872473'); /* IE9 */
+            src: url('iconfont.eot?t=1606640872473#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKIAAsAAAAABjwAAAI8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcApAXwE2AiQDCAsGAAQgBYRtBzYbiwXIHpIkgUqEEALaJcMAQjx87cf+3H2LiSSGKJpFE5nEdPFIgtgIkajd/i/hXc3llcnv+Gf5qkQK4S7ZS/gym03BEVkysrLGtLrqq1m20XEg0vs8l9ObQAcyP9A5tgeNNWlSL6BeHEiB7oFRZCWUccPYBS/wMYFag3Lqtibnl0SrzF4ViDPPkaK1EJVlVqgWKhsOZvGsQnV6TK94ir4f/y1EK0lFwW7ZPZ2wxfB3TklxXB47CQgxAjpegQLzhEwcNma3NQjGNajNNholjtUYfFeWgUcc1SnYX2fX14N+qHomtbdSgASPNVUroXvSJqLVuu1ceXx4uhtaXvW3PxwPLt2XLzX4SbfV2k7fbVVc8wkNgz8rxKtA8Lbrrd2epf/qugy+fiEy5mF+qvfhC/6FeuBANrS2O2VN3TiatJ6jrVYtSjjY6mOqrePExVCtY4K/ykCGQrVxMrPzqFBnEZWqraLWnKnjddqQBpFrMOsCIDR7RtLoBYVmb2Rma6jQ6Q+VmqMBtY6j7cI6k+G1bxJKRhvUEXiWibXr5fa4cQGdLJSU10b8ClLqJaBcKJULUxgjLbEl3XcqzBo0mQgmwXMYhgYSMj5aXHCZk2qxqJveVLBMJNptIkhiyAaUI8BjMWI6GM/aK59fgByZkEQdfXXlCkRS3uygrKA0gJwyxYP6HuWV1D5HBWMa0IgRAZNgHgqFDJA0z/MhCytwJ6QTVUVnmB5qKmxvif7uBNSy7Smc1kL9uSdD6fsVMZtMCAAA') format('woff2'),
+            url('iconfont.woff?t=1606640872473') format('woff'),
+            url('iconfont.ttf?t=1606640872473') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+            url('iconfont.svg?t=1606640872473#iconfont') format('svg'); /* iOS 4.1- */
+            font-weight:normal;
+            font-style: normal;
+            font-display:block;
+        }
+        @font-face {font-family: "iconfont";
+            src: url('iconfont.eot?t=1606816024270'); /* IE9 */
+            src: url('iconfont.eot?t=1606816024270#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAXEAAsAAAAACvwAAAV2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDQAqIaIcdATYCJAMYCw4ABCAFhG0HZhtZCSMRtntwEpH9RQJPNc+LQ4hKigEbcThlB23h8ISdsOW/2M4PV+HgmyDqx3578u4LLkk0/aGLJU1UkngiVDKUSqgmkUQlmoX65h/P/D+9dq9BobQHenbbCcptTjYHR05gmk4ZSFDZTOiAgbA48weAb819BMKcjVAl+e2RR1t8S4V0stnC/xwzXfvA8tvWLtlBe6PxqA7ogCraDvhOHE9nuFYmpuTC3uVsCFCml2jg7Hw7O2icRC4o29seNgD0yIAr8EJRHcyeDuQEJUVdpheB4/rv5YeKDVCSgWTLlY3mg8H3jrw7MypT9C4RCHdnA6z9wIAxAA5yyDoOSCsbqxVlbotiGihTRNH3tHbj/cX/Wf7f49YlFyQrE7L6Xx44gmIkkACJopqwC8kE70hOhcP7ECoE3ofKUSlfgAqD//0Gkq6JHbb2AmQN5AHYsWsGBZQS0a4+evSG4M8LP2oPDx1aKMRTqX8mVeMFmm0aY5YkpyjaXa729m5VpzCGLIZudzcnU0fV0utzNtgL/kA9QbKMgzkT5nBecQ/kWTkGjaO9xqztkoXnSaEicr2YvpMnCySnJNpF0YxtwttmDhTIgor+O+H1PPhEcRh3sNMXwOLrLehgNjevihQw5pCNMrF55p508kxes5mOsuK8HCbUkCVQkgafFP3LXM3d7qByyV59dM/XjWX5/IIaLm9UJ0dXe5dunWfhOw96exQdSiH2HPFTFh/uTzB1NoB7Rs9MeOADcHo9hATIrUVnYoyQw6MozVIc1ofLq2JqCmD+errWOou3aJz8MorlmdxCQcgeiTu1NWQvoT/K8zkCiXEcxXZHqUPMkZzD9MEB7XesN+g/WocfXkDB1cixMsUs0LzlxN8BQ6ZlPlvmp3+4NhiZUM7PRvb0Mg0NHRb+LOzZHbuxlIWNtryoVQyvoacis5FyGhmODMPtZiO2jMV9Em1dWzYeOG/Q0aaezQjTIK9BNeBokmdy9/UgJSHRv2XEg613RxfPXn5rYL3tq+5EdwY9G+N9FUdzo1tmDSSmBEC097OZdcga6Ood2gbOi+tqOijPgKUjkA5IR9hnwOk+suPPGI4WJSi1fRaS2v9kywUDJqgWnCR8HLimbfqA+W1Tw9qIbmb2jT0+XeG4cbCLz6z6Z280Vm71jtwZjoznuZOlHx1tSDJ3fmgEmsSEm/3lmLSqXd9WX2/6U0oqAWLni9evZ9uBmKaN1+tk+ADKuvX+l+olLl0MX693gOCfwWWuedJP3c+rdeOovufPngDMBgXkVUuJJarnWkIsVZmOETdXeK94oVHJsbIKZF9fNuPoZcsQ6231yFLZImOOWcH98V9j78zvMLexhx5C1290fPa+42Lpn+Vt6eNq1Bx6yrLpEnVJuUWydauC2QDkj/bEjGPZi2kAoKfaFfKRhCj+2vbDXJxS3uE1ZGLU4lqb/bWI/e4nnt9UrLo/HykgF3xTlQTCr7RQOOChODGG+/1zgYgcHKkdCt/gEfgqexq5tytVi1jBf0bV0oNSoAeMIn1Ix45BoopxCIpMQJlRWu5fRRMTCeJqACMs0kCoZwsotVyDUc8lpGNlSLTyFoJ6A2VWxXjEKgY8yb+8CVrFQN1JvufFZGZ9acq/YdPUylBcE/4h0YepzIpp+gsLZBfbxM1WqoaM8Eyf2vkwTUyrcECvmVNdL3luuFfKep6vXq7eBK1ioO4k3/NiyvH6Mvv9b9g0taLoG3D+Q6JfPJVZIUB+KRZR31OpjZutlGKGjFXKM32SDVOaYFr51QJ6zdwGsfWS0zAjVWSHV83P8gKgfJUcM66HsZwuNw87/OGX++o4Hb8G3y7KqZ48Ot/yMcy2J6eH6Apv8E/WzN9T73B1BQAA') format('woff2'),
+            url('iconfont.woff?t=1606816024270') format('woff'),
+            url('iconfont.ttf?t=1606816024270') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+            url('iconfont.svg?t=1606816024270#iconfont') format('svg'); /* iOS 4.1- */
+            font-weight:normal;
+            font-size: 16px;
+            font-style: normal;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .w{
+            width:1200px;
+            margin:0 auto;
+        }
+        .fl{
+            float:left;
+        }
+        .fr{
+            float:right;
+        } 
+        .shortcut{
+            height:31px;
+            line-height: 31px;
+            background-color: #f1f1f1;
+        }
+        .shortcut ul li{
+            float:left;
+            list-style-type: none;
+        }
+        .shu{
+            width:1px;
+            height:12px;
+            background-color: #666666;
+            margin:9px 15px 0;
+        }
+        .arrow-icon::after{
+            content:'\e638';
+            font-family: "iconfont";
+            /* margin-left: 2px; */
+        }
+        .icon-weibo::after{
+            content:'\e666';
+            font-family:"iconfont";
+        }
+        .icon-weixin::after{
+            content:'\e665';
+            font-family: "iconfont";
+            margin:5px 15px 0;
+        }
+        .icon-shouji::after{
+            content:'\e602';
+            font-family:"iconfont";
+            margin:5px 10px 0;
+        }
+        /* header 头部制作*/
+        .header{
+            position: relative;
+            height:105px;
+            background-color:#fff;
+        }
+        .logo{
+            position:absolute;
+            top:20px;
+            width:171px;
+            height: 70px;
+            background-color: #fff;
+        }
+        .logo a{
+            display:block;
+            width:171px;
+            height:70px;
+            background:url(images1/logo.png) no-repeat;
+            font-size:0;
+        }
+        .search{
+            position:absolute;
+            left:346px;
+            top:30px;
+            width: 537px;
+            height: 36px;
+            border: 2px solid orangered;
+        }
+        button,input{
+            border:0;
+            outline:none;
+        }
+        .search input{
+            float:left;
+            width:454px;
+            height:32px;
+            padding-left:10px;
+        }
+        .search button{
+            float: left;;
+            width:79px;
+            height:32px;
+            background-color: orangered;
+            font-size:16px;
+            color:#fff;
+        }
+        .hotwords{
+            position:absolute;
+            top:66px;
+            left:346px;
+        }
+        .hotwords a{
+            margin:0 10px;
+            text-decoration: none;
+            color:rgb(75, 74, 74);
+        }
+        .shopcar{
+            position:absolute;
+            top:30px;
+            right:60px;
+            width: 140px;
+            height:35px;
+            line-height: 35px;
+            text-align:center;
+            border:1px solid #dfdfdf;
+            background-color: #f7f7f7;
+        }
+        .shopcar::before{
+            content:'\eeba';
+            font-family: "iconfont";
+            color: orangered;
+            margin-right: 5px;
+        }
+        .nav{
+            height: 47px;
+            border-bottom: 2px solid orangered;
+        }
+        .nav .dropdown{
+            float: left;
+            width: 210px;
+            height: 46px;
+            background-color: orangered;
+        }
+        .nav .navitems{
+            float: left;
+        }
+        .dropdown .dd{
+            width: 100%;
+            height: 100px;
+            color: white;
+            line-height: 45px;
+            text-align: center;
+            font-size:16px;
+        }
+        .dropdown .dt{
+            width: 210px;
+            height: 465px;  
+            background-color:#e81623;
+        }
+    </style>
+</head>
+<body>
+    <!-- 快捷导航模块 start -->
+    <section class="shortcut">
+    <div class="w">
+        <div class="fl">
+            <ul>
+                <li>送货至：四川</li>
+            </ul>
+        </div>
+        <div class="fr"> 
+            <ul>
+                <li>
+                    <a href="">您好！请登录</a>&nbsp; <a href="">免费注册</a>
+                </li>
+                <li class="shu"></li>
+                <li>我的订单</li>
+                <li class="shu"></li>
+                <li class="arrow-icon">收藏夹</li>
+                <li class="arrow-icon">客户服务</li>
+                <li class="arrow-icon">网站导航</li>
+                <li class="shu"></li>
+                <li class="icon-weibo">关注我们：</li>
+                <li class="icon-weixin"></li>
+                <li class="shu"></li>
+                <li class="icon-shouji">手机版</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <!-- 快捷导航模块 end -->
+    <!-- header头部模块制作 start -->
+    <header class="header w">
+        <!-- logo模块 -->
+        <div class="logo">
+            <h1>
+                <a href="index1.html" title="1号店商城">1号店商城</a>
+            </h1>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="请输入关键字">
+            <button>搜索</button>
+        </div>
+        <!-- hotwords模块制作 -->
+        <div class="hotwords">
+            <a href="#">咖啡</a>
+            <a href="#">iPhone 6s</a>
+            <a href="#">新鲜美食</a>
+            <a href="#">蛋糕</a>
+            <a href="#">日用品</a>
+            <a href="#">连衣裙</a>
+        </div>
+        <div class="shopcar">我的购物车</div>
+    </header>
+    <!-- header头部模块制作end -->
+    <!-- nav模块制作 start -->
+    <nav class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dd">全部商品分类</div>
+                <div class="dt"></div>
+            </div>
+            <div class="navitems"></div>
+        </div>
+    </nav>
+    <!-- nav模块制作 end -->
+</body>
+</html>
