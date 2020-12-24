@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var age = prompt('请输入你的年龄：');
+        var str = '您今年已经' + age + '岁了';
+        alert(str);
+    </script>
+    <script>
+        //typeof检测变量的数据类型
+        var num = 10;
+        console.log(typeof num);
+        var str = 'pink';
+        console.log(typeof str);
+        var flag = true;
+        console.log(typeof flag);
+        //ptompt取过来的值是字符型的
+        var age = prompt('请输入您的年龄：');
+        console.log(age);
+        console.log(typeof age);
+    </script>
+    <script>
+        //数据类型的转化
+        //数字转字符
+        var num = 10;
+        var str = num.toString();
+        console.log(str);
+        console.log(typeof str);
+        console.log(String(num));
+        console.log(num + '');
+    </script>
+    <script>
+        var age = prompt('请输入您的年龄');
+        console.log(parseInt(age));
+        console.log(parseInt('3.14'));
+        console.log(parseInt('3.94'));
+        console.log(parseInt('120px'));
+        console.log(parseFloat('3.14'));
+        console.log(parseFloat('120px'));
+        var str = '123';
+        console.log(Number(str));
+        console.log('12' - 0);
+        console.log('123' - '120');
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+

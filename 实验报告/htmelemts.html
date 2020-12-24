@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:lightblue;
+        }
+        #w{
+            position: absolute;
+            background-color:lightpink;
+            width: 400px;
+            height: 600px;
+            left: 50%;
+            top: 35%;
+            margin-top: -200px;
+            margin-left: -150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="w">
+        <form class="form-inline">
+        <h2>江西软件大学</h2>
+        姓名：<label><input type="text"></label><br/><br/>
+        性别：<label>
+                <input type="radio" name="sex" id="man">男
+                <input type="radio" name="sex" id="woman">女
+            </label>
+            <br/><br/>
+        年龄：<label><input type="number"></label><br/><br/>
+        生源地：<label><input type="text"></label><br/><br/>
+        户籍地址:<label><select name="address" id="">
+                <option value="jiangxi">江西省</option>
+                <option value="hunan">湖北省</option>
+            </select>
+            <select name="city" id="">
+                    <option value="">南昌市</option>
+                    <option value="">九江市</option>
+                    <option value="">赣州市</option>
+                    <option value="">萍乡市</option>
+                    <option value="">共青城</option>
+                    <option value="">武汉市</option>
+            </select>
+            <select>
+                <option value="">都昌县</option>
+                <option value="">鄱阳县</option>
+            </select>
+        </label>
+        <br/><br/>
+        兴趣爱好：<label>
+            <input type="checkbox" name="" id="lanqiu">篮球
+            <input type="checkbox" name="" id="paiqiu">排球
+            <input type="checkbox" name="" id="yumaoqiu">羽毛球
+            <input type="checkbox" name="" id="wangqiu">网球
+            <input type="checkbox" name="" id="zuqiu">足球
+        </label>
+        <br/><br/>
+        备注：<label><textarea name="" id="" cols="40" rows="5"></textarea></label><br/><br/>
+        填表时间：<label><input type="time"></label><br/><br/>
+        登录密码：<label><input type="password"></label><br/><br/>
+        附件文件：<label><input type="file" name="" id=""></label><br/><br/>
+        <input type="submit" value="提交信息">&nbsp;&nbsp;
+        <button id="cancel">取消提交</button>
+        </form>
+    </div>
+</body>
+</html>

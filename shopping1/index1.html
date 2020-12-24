@@ -37,6 +37,13 @@
             width:1200px;
             margin:0 auto;
         }
+        ul li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
         .fl{
             float:left;
         }
@@ -99,7 +106,7 @@
         }
         .search{
             position:absolute;
-            left:346px;
+            left:353px;
             top:30px;
             width: 537px;
             height: 36px;
@@ -120,7 +127,7 @@
             width:79px;
             height:32px;
             background-color: orangered;
-            font-size:16px;
+            font-size:12px;
             color:#fff;
         }
         .hotwords{
@@ -163,7 +170,7 @@
         .nav .navitems{
             float: left;
         }
-        .dropdown .dd{
+        .dropdown .dt{
             width: 100%;
             height: 100px;
             color: white;
@@ -171,10 +178,73 @@
             text-align: center;
             font-size:16px;
         }
-        .dropdown .dt{
-            width: 210px;
-            height: 465px;  
-            background-color:#e81623;
+        .navitems ul li{
+            float:left;
+            list-style-type: none;
+        }
+        .navitems ul li a{
+            height:45px;
+            line-height:45px;
+            display:block;
+            font-size:12px;
+            padding:0 25px;
+            text-decoration: none;
+            color:black;
+        }
+        .down{
+            height:47px;
+            position:relative;
+        }
+        .down .down1{
+            float:left;
+        }
+        .down1 ul li{
+            float:left; 
+        }    
+        .down1 ul li a{
+            padding:1px 4px;
+            height:45px;
+            line-height:45px;
+            display:block;
+            font-size:12px;
+           
+        }   
+        .down1 .w1{
+            border:1px dashed rgb(214, 90, 8);
+            float:left;
+        }  
+        .w1 a{
+            height:25px;
+            float: left;
+        }
+        .search1{
+            height:800px;
+            position: absolute;
+        }
+        .search1 .nav1 .nav2 .nav3 .nav4{
+            border:1px solid gray;
+            height:200px;
+        }
+        .fl1{
+            position:absolute;
+            float:left;
+            text-align: center;
+            font-size:12px;
+            left:185px;
+            top:5px;
+        }
+        .fr1{
+            float:left;
+            position: absolute;
+            margin:0 20px;
+            font-size:12px;
+            left:250px;
+            top:5px;
+            padding-left: 5px;
+        }
+        .fr1 ul li{
+            padding:0 10px;
+            float:left;
         }
     </style>
 </head>
@@ -238,12 +308,61 @@
     <nav class="nav">
         <div class="w">
             <div class="dropdown">
-                <div class="dd">全部商品分类</div>
-                <div class="dt"></div>
+                <div class="dt">全部商品分类</div>
             </div>
-            <div class="navitems"></div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">自营超市</a></li>
+                    <li><a href="#">1号团</a></li>
+                    <li><a href="#">1号超市</a></li>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#">美妆</a></li>
+                    <li><a href="#">1号海购</a></li>
+                    <li><a href="#">团购</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- nav模块制作 end -->
+    <div class="down w">
+    <div class="down1">
+        <ul>
+            <li><a href="#">全部&gt;</a></li>    
+            <li><a href="#">珠宝首饰&gt;</a></li>    
+            <li><a href="#">珍珠项链&gt;</a></li>
+            <li class="w1"><a href="#">品牌：珠韵首饰</a></li>
+        </ul> 
+    </div>
+    </div>
+    <!--搜索筛选模块-->
+    <section class="search1 w">
+        <div class="nav1">
+            <div class="fl1"><a href="#">品牌:</a></div>
+            <div class="fr1">
+            <ul>
+                <li><a href="#">施华洛世奇/Swarovski</a></li>
+                <li><a href="#">珠韵首饰/zhuyun JEWELLERY</a></li>
+                <li><a href="#">海瞳</a></li>
+                <li><a href="#">周大福/CHOW TAI FOOK</a></li>
+                <li><a href="#">京润珍珠</a></li>
+                <li><a href="#">佰色传情/BRLR</a></li>
+                <li><a href="#">迈姿/Mai</a></li>
+                <li><a href="#">Ginasy Jewelry</a></li>
+                <li><a href="#">心鑫圆</a></li>
+                <li><a href="#">银斯妮/yin si ni silver1</a></li>
+                <li><a href="#">迈姿/Maizi</a></li>
+                <li><a href="#">Ginasy Jewelry</a></li>
+                <li><a href="#">蛟蓓</a></li>
+                <li><a href="#">芭比/Barbie</a></li>
+                <li><a href="#">珍福祥</a></li>
+                <li><a href="#">珍福祥</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="nav2"></div>
+        <div class="nav3"></div>
+        <div class="nav4"></div>    
+    </section>
 </body>
-</html>
+</html> 
